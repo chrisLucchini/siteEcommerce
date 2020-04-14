@@ -1,0 +1,36 @@
+.footer{
+
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 241, 241);
+    color: rgb(8, 8, 8);
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(180, 177, 177,0.7);
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+.blocFooter{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.copyright{
+    
+    padding-left: 10px;
+}
+.infoFooter{
+    display: flex;
+}
+.linkFooter{
+    
+    display: block;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 14px;
+    line-height: 10px;
+    border-right: 1px solid blueviolet;
+}

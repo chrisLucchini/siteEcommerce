@@ -1,0 +1,38 @@
+base de donnees:
+    ✔ Conception du MCD @done(20-03-02 11:06)
+    ✔ Création de la base de donnée(PhpMyAdmin) @done(20-03-02 11:06)
+    ✔ Création des tables @done(20-03-02 11:06)
+    ✔ Vue relationnel opérationnel(foreign key..) @done(20-03-02 11:06)
+
+FONCTIONNALITES:
+    ✔ Inscription/Connection @done(20-03-02 16:06)
+    ☐ Panier
+    ☐ Valider une commande
+    ☐ Avis sur produit
+    ☐ Mode admin: ajouter / supprimer des produits, catégories, utilisateurs
+
+MVC:
+    ✔ Conception du diagramme de classe @done(20-03-02 16:06)
+    ✔ Création de l'arborescence MVC @done(20-03-02 16:06)
+    ☐ Model fonctionnel:
+        ☐ implémentation des différentes classes
+        ☐ Test avec base de donnée
+    ☐ Controller fonctionnel:
+        ☐ Réalisation d'un controller par catégorie:
+                ☐ Controle d'affichage avec données récupérés en bdd.
+                ☐ Controle données utilisateur
+        ☐ Gestion fonctionnel des Vues
+        ☐ Gestion fonctionnel des vérifications utilisateurs
+    ✔ View fonctionnel: @done(20-03-06 20:46)
+        ✔ Classe View @done(20-03-06 20:47)
+        ✔ Intégration du layout dans chaque vues(ob_start ob_get_clean) @done(20-03-06 20:47)
+    ✔ Router fonctionnel: @done(20-03-06 20:47)
+        ✔ Récupération des données en get, root en fonction de ces données @done(20-03-06 20:47)
+    
+FRONT:
+    ☐ Réalisation du MockUp pour le Layout(header, footer, menu)
+    ☐ Réalisation du layout à intégrer en vue MVC
+    ☐ Formulaire inscription / connexion(MockUp + Réalisation)
+    ☐ Page d'accueil(MockUp + Réalisation)
+    ☐ Panier(MockUp + Réalisation)
+    ☐ Stylisation sass des différentes pages(ajout de js)

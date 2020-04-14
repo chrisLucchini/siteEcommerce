@@ -1,0 +1,338 @@
+@import "animationHeader.scss";
+
+
+$heightMenu: 6vh;
+$margeTop: 5px;
+$tommorow: 'Tomorrow', sans-serif;
+$widthOnglet : "12vw";
+
+.brand{
+
+    width: $widthOnglet;
+    // height: $heightMenu;
+    font-family: $tommorow;
+    font-size: 40px;
+}
+.brand a {
+    
+    text-decoration: none;
+    color: $colorF;
+}
+.espace {
+
+    flex-grow: 6;
+}
+
+.separateurMenu {
+
+    height: 3vh;
+    width: 2px;
+    border-radius: 20%;
+    margin: 1vw;
+    background-color: $color5;
+}
+
+.menu-principal{
+
+    width: 100%;
+    // height: $heightMenu;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $colorB;
+    color: $colorF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    // backdrop-filter: blur(7px);
+
+}
+.searchBar{
+
+    overflow: hidden;
+}
+
+.separateur {
+
+    margin-top: $margeTop;
+    background-color: $color5;
+    height: 1px;
+    width: 70%;
+}
+.onglet {
+    width: $widthOnglet;
+    font-family: $tommorow;
+    text-align: center;
+    margin-right: 8px;
+    // overflow: hidden;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+
+}
+.onglet a{
+    text-decoration: none;
+    color: $colorF;
+
+}
+.titre {
+
+    margin-top: 10vh;
+}
+
+.icon-panier {
+
+  display: block;
+  color: $color4;
+  position: absolute;
+  z-index: 1;
+  font-size: 28px;
+}
+.bulle-panier {
+
+  width: 20px;
+  height: 20px;
+  background-color: $color3;
+  color: $colorF;
+  border-radius: 100%;
+  position: relative;
+  left: 18px;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+ 
+ #menuToggle
+ {
+   display: block;
+   margin-left: 30px;
+   margin-bottom: 21px;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: $colorF;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: $color4;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: relative;
+   top: 20px;
+   
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: $colorF;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: $color4;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   left: 0;
+   top: 84px;
+//    margin: -100px 0 0 -50px;
+   padding: 50px;
+//    padding-top: 125px;
+   
+   background: $color3;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+ .sous-menu {
+
+  display: none;
+  position: absolute;
+   width: 300px;
+   left: 300px;
+   top: 50px;
+//    margin: -100px 0 0 -50px;
+   padding: 50px;
+//    padding-top: 125px;
+   
+   background: $color3;
+   list-style-type: none;
+
+ }
+ .sous-menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+
+
+
+
+// #deroulMenu{
+//     position: relative;
+//     left: 0;
+//     margin-top: -15px;
+//     width: 250px;
+//     height: 450px;
+//     background-color: $colorB;
+//     backdrop-filter: blur(4px);
+//     display: none;
+//     z-index: 999;
+// }
+// .group-button{
+
+//     margin-left: 5%;
+//     margin-top: $margeTop;
+//     height: 50px;
+//     width: 50px;
+
+// }
+// .hamburger {
+
+//     height: 4vh;
+//     width: 2.5vw;
+//     border-radius: 100%;
+//     cursor: pointer;
+//     // background-color: $colorB;
+// }
+// .hamburger:hover{
+
+//     animation: hamburgerHover 1s ease-in forwards;
+// }
+
+
+// #trait1{
+
+//     width: 21px;
+//     height: 1.5px;
+//     background-color: $colorF;
+//     position: relative;
+//     top: 16px;
+//     left: 10px;
+
+// }
+// #trait2{
+
+//     width: 21px;
+//     height: 1.5px;
+//     background-color: $colorF;
+//     position: relative;
+//     top: 20px;
+//     left: 10px;
+
+// }
+

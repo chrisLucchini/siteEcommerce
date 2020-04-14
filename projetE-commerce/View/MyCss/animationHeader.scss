@@ -1,0 +1,34 @@
+@keyframes hamburgerHover{
+
+    from{
+
+    }
+    to {
+        box-shadow: 0px -3px 5px 3px rgb(87, 137, 212);
+    }
+}
+
+@keyframes menuDeroulantOpen{
+
+    from{
+        width: 250px;
+        height: 0px;
+    }
+    to {
+        width: 250px;
+        height: 450px;
+
+    }
+}
+@keyframes menuDeroulantClose{
+
+    from{
+        width: 250px;
+        height: 450px;
+    }
+    to {
+        width: 250px;
+        height: 0px;
+
+    }
+}

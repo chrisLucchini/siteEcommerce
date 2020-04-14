@@ -1,0 +1,70 @@
+$colMax : 12;
+$map:("lg":850, "sm":650, "xs":450);
+
+
+.myContainer {
+
+  width: 80%;
+  height: 1280px;
+  margin: auto;
+  margin-top: 100px;
+  // display: flex;
+}
+@media(max-width: 650px){
+
+  .myContainer{
+
+    width: 100%;
+  }
+}
+
+.myRow{
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+}
+
+
+@for $i from 1 through $colMax {
+
+  .myCol-#{$i}{
+
+    width: calc(#{100% / $colMax * $i} - 10px * 2);
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin: 10px;
+    // margin: 2px;
+    // justify-content: space-between;
+
+  }
+  
+}
+
+@each $key, $val in $map {
+
+  @media (max-width: $val + px) {
+
+    @for $i from 1 through $colMax {
+
+      .myCol-#{$key +"-" + $i}{
+    
+        width: calc(#{100% / $colMax * $i} - 10px * 2);
+        box-sizing: border-box;
+        margin-top: 1vh;
+        margin: 10px;
+    
+      }
+      
+    }
+    
+  }
+  
+}
+
+.bloc {
+
+  height: 20px;
+  border: 2px solid black;
+}

@@ -1,0 +1,450 @@
+$colorB: #07020D;
+$colorF: #FFFFFF;
+$color3: #151E3F;
+$color4: #FFC53A;
+$color5: #F2F3D9;
+$tommorow: 'Tomorrow', sans-serif;
+@import "grid.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "formulaire.scss";
+
+$roboto:'Roboto', sans-serif;
+
+*{
+
+  padding: 0;
+  margin: 0;
+}
+body{
+    height: 100%;
+    background-color: $colorF;
+    font-family: $roboto;
+}
+a {
+
+  cursor: pointer;
+}
+.prix{
+
+  font-size: 35px;
+  text-align: center;
+  color: $color4;
+  font-weight: bold;
+  width: 100%;
+}
+.imageProduit{
+
+  width: 80%;
+}
+.imageProduit img {
+
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+
+  border-bottom: solid 2px grey;
+}
+
+.img-desc {
+
+  width: 100%;
+  height: 100%;
+}
+tr{
+  border: 1px solid grey;
+
+}
+
+.td-carac{
+
+  padding-left: 0.5vw;
+  padding-right: 2vw;
+  border: 1px solid grey;
+}
+.td-titre-carac{
+
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  font-weight: bold;
+}
+.item{
+  
+  height: 50vh;
+  width: 100%;
+}
+
+.item img{
+
+  height: 100% !important;
+  width: 100%;
+}
+
+.title-prod {
+
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: $tommorow;
+}
+.title2 {
+
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: $tommorow;
+  width: 50px;
+  background-color: $color4;
+  color: $colorB;
+  border: gray solid 1px;
+}
+.mini-technique {
+
+  font-size: 13px;
+  color: gray;
+}
+.mini-desc{
+
+  font-size: 18px;
+  color: gray;
+}
+
+.title-desc {
+
+  font-size: 23px;
+  font-family: $tommorow;
+}
+
+.vuePanier {
+
+  width: 100%;
+  border: solid 2px black;
+
+}
+
+.panier {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 180px;
+  height: 200px;
+  margin: auto;
+  background-color: $color3;
+  border-radius: 3px;
+  justify-content: space-evenly;
+}
+
+.mini-btn-add-panier {
+
+  background-color: $color5;
+  color: $colorB;
+  font-size: 30px;
+}
+
+.addPanier{
+
+  width: 220px;
+  height: 80px;
+  text-align: center;
+  background-color: $color4;
+  color: $color3;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.designation {
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  line-height: 100%;
+  font-size: 25px;
+}
+
+.quantite {
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  line-height: 100%;
+  font-size: 15px;
+
+}
+
+img {
+
+  height: 20vh;
+  width: 70%;
+}
+
+.button-decrease-panier {
+
+  text-align: center;
+  height: 30px;
+  width: 200px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.myBtn {
+
+  width: 200px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.addSubmit {
+
+  width: 200px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.commande {
+
+  border: 1px solid black;
+}
+.date-commande {
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.montant-commande {
+
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.desc-commande{
+
+  text-align: center;
+}
+
+.user a {
+
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.delete-btn{
+
+  width: 200px;
+  margin: auto;
+  background-color: red;
+  color: white;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.delete-btn a {
+  
+  text-decoration: none;
+  
+}
+
+.blocImg {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCarousel{
+
+  height: 800px;
+}
+
+.item {
+
+  height: 800px !important;
+}
+
+.caroussel-title {
+
+  font-size: 25px;
+  display: block;
+  width: 150px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.bloc-notif {
+
+  display: none;
+  width: 180px;
+  position: fixed;
+  padding-left: 10px;;
+  right: 50px;
+  color: $color4;
+  background-color: $color3;
+  border-radius: 7px;
+}
+
+.filtre-produit{
+
+  background-color: $color3;
+  color: $colorF;
+}
+
+.bloc-avis{
+
+  border-bottom: 1px solid grey;
+}
+
+
+// Carousel configuration parameters
+$n: 40;
+$item-width: 400px;
+$item-separation: 80px;
+$viewer-distance: 500px;
+
+// Derived variables
+$theta: 2 * 3.141592653589793 / 8; 
+$apothem: 482.842712474619px;
+
+.carouselProduct {
+	padding: 20px;
+
+	perspective: $viewer-distance;
+	overflow: hidden;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> * {
+		flex: 0 0 auto;
+	}
+	
+	figure {
+		margin: 0;
+		
+		width: 100%;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+		transform-origin: 50% 50% (-$apothem);
+		
+		img {
+      width: 100%;
+      height: 100%;
+			box-sizing: border-box;
+			padding: 0 $item-separation / 2;
+			
+			opacity: 0.9;
+			
+			&:not(:first-of-type) {
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform-origin: 50% 50% (-$apothem);
+			}
+			
+		}
+	}
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0 0;
+		
+		button {
+			flex: 0 0 auto;
+			margin: 0 5px;
+			
+			cursor: pointer;
+			
+			color: #333;
+			background: none;
+			border: 1px solid;
+			letter-spacing: 1px;
+			padding: 5px 10px;
+		}
+	}
+	
+}
+
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+   .fa-star {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: gray;
+    cursor: pointer;
+    padding: 0.0625rem;
+  }
+  /* Si elle porte en plus la classe '.gold', elle sera en jaune. */
+  .fa-star.gold {
+    color: #ffdc0f;
+  }
+  
+  /* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    /* Le groupe '.stars' positionne les étoiles
+       les unes à côté des autres sans espacements. */
+    .stars {
+      display: inline-flex;
+      justify-content: center;
+      font-size: 3em;
+    }
+  
+    /**
+     * Et là opère la magie du ':hover' !
+     */
+  
+    /* A l'état :hover sur le parent '.rating',
+       on force TOUTES les étoiles à passer en jaune. */
+    .stars:hover .fa-star {
+      color: #ffdc0f;
+    }
+    /* Et si la souris survole une étoile en particulier,
+       on sélectionne toutes les étoiles qui sont APRÈS celle-ci
+       grâce à l'opérateur '~' et on les force en GRIS */
+    .stars .fa-star:hover ~ .fa-star {
+      color: gray;
+    }
+
