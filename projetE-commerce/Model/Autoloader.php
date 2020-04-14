@@ -1,11 +1,12 @@
 <?php
+require_once("config.inc.php");
 class Autoloader
 {
     public static function ModelRegister()
     {
         spl_autoload_register(function($className){
 
-            $file = "C:\\wamp\\www\\dev_2019\\siteEcommerce\\projetE-commerce\\Model\\".$className.'.php';
+            $file = PATH_SITE."Model/".$className.".php";
             if(file_exists($file)) {
 
                 include $file;
@@ -16,7 +17,7 @@ class Autoloader
     {
         spl_autoload_register(function($className){
 
-            $file = "C:\\wamp\\www\\dev_2019\\siteEcommerce\\projetE-commerce\\Controller\\".$className.'.php';
+            $file = PATH_SITE."Controller/".$className.".php";
             if(file_exists($file)) {
 
                 include $file;
