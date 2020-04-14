@@ -13,7 +13,7 @@ if(isset($_SESSION['user']) && $_SESSION['user']->getNiveau() == "2") {
     
 }
 else {
-    
+
     $r->routerRequete();
 
 }
